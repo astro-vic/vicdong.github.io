@@ -68,6 +68,10 @@ body {
   line-height: var(--body-line-height);
   color: var(--text);
   background: var(--bg-gradient);
+  background-image: url('/assets/images/bunny-shootingstar.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   margin: 0;
   min-height: 100vh;
   transition: background-color var(--transition-smooth);
@@ -486,8 +490,8 @@ body {
   margin: 0;
   line-height: var(--heading-line-height);
   background: var(--accent-gradient);
-  -webkit-background-clip: text;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
