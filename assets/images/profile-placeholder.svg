@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320">
+  <rect width="100%" height="100%" fill="#E6EFF8"/>
+  <circle cx="160" cy="110" r="70" fill="#1f78d1" />
+  <text x="160" y="125" font-size="56" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif">YD</text>
+</svg>
