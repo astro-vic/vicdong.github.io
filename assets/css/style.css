@@ -189,25 +189,64 @@ body {
   margin: 0 0 1.5rem;
 }
 
+/* Contact Links */
 .contact-links {
   display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .contact-links a {
-  color: #06b6d4;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: #f8fafc;
+  color: #334155;
   text-decoration: none;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
   font-weight: 500;
-  padding: 0.5rem 1rem;
-  border: 1px solid #06b6d4;
-  border-radius: 4px;
   transition: all 0.2s ease;
 }
 
 .contact-links a:hover {
   background: #06b6d4;
   color: white;
+  border-color: #06b6d4;
+  transform: translateY(-1px);
+}
+
+/* Publication Buttons */
+.project-publications {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.publication-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #06b6d4;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.publication-btn:hover {
+  background: #0891b2;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.2);
+}
+
+.publication-btn::before {
+  content: "📄";
+  margin-right: 0.25rem;
 }
 
 /* Intro Content within Hero */
