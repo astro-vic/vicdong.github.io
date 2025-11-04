@@ -889,7 +889,7 @@ body {
 /* Research Interests */
 .research-intro {
   font-size: 1.1rem;
-  color: var(--muted);
+  color: #ffffff;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
@@ -1206,7 +1206,7 @@ section h2::after {
 /* Responsive adjustments */
 /* Outreach Section Styling */
 .outreach-intro {
-  color: var(--muted);
+  color: #ffffff;
   font-size: 1.1rem;
   line-height: 1.6;
   margin: 0;
@@ -1306,7 +1306,7 @@ section h2::after {
 }
 
 .outreach-contact p {
-  color: var(--muted);
+  color: #ffffff;
   margin-bottom: 1.5rem;
 }
 
