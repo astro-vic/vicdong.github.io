@@ -154,6 +154,7 @@ body {
 .hero {
   display: grid;
   grid-template-columns: 180px 1fr;
+  grid-template-areas: "left right";
   gap: 2rem;
   padding: 2.5rem 0;
   align-items: start;
@@ -162,8 +163,15 @@ body {
 }
 
 .hero-left {
+  grid-area: left;
   position: relative;
   top: 0;
+  z-index: 1;
+}
+
+.hero-right {
+  grid-area: right;
+  position: relative;
   z-index: 1;
 }
 
