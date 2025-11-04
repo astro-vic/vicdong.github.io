@@ -314,6 +314,18 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.intro-content a {
+  color: #06b6d4;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.intro-content a:hover {
+  color: #fbbf24;
+  text-decoration: underline;
+}
+
 .profile-photo {
   width: 200px;
   height: 200px;
