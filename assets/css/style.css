@@ -69,7 +69,7 @@ body {
   line-height: var(--body-line-height);
   color: var(--text);
   /* Layer the site gradient over an optional background image */
-  background-image: linear-gradient(135deg, rgba(246, 249, 252, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%), url('/assets/images/bunny_shootingstar.png');
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.85) 100%), url('/assets/images/bunny_shootingstar.png');
   background-size: cover, cover;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
