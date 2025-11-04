@@ -413,18 +413,20 @@ body {
 
 .figures-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
+  align-items: start;
 }
 
 .figure-item {
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e2e8f0;
   border-radius: 0.75rem;
-  padding: 1rem;
+  padding: 1.25rem;
   transition: all var(--transition-smooth);
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
 .figure-item:hover {
@@ -434,20 +436,12 @@ body {
 
 .figure-image {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
   border-radius: 0.5rem;
-  background: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666;
-  font-style: italic;
-}
-
-.figure-image:before {
-  content: "Add your figure image here";
-  display: block;
+  background: #f9f9f9;
+  border: 1px solid #e2e8f0;
 }
 
 .figure-caption {
@@ -1139,5 +1133,14 @@ section h2::after {
   
   .outreach-item {
     padding: 1.5rem;
+  }
+
+  .figures-gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .figure-item {
+    padding: 1rem;
   }
 }
