@@ -69,7 +69,7 @@ body {
   background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   line-height: 1.6;
-  color: #2d3748;
+  color: #f7fafc;
   margin: 0;
   min-height: 100vh;
   font-size: 16px;
@@ -278,17 +278,29 @@ body {
   margin-right: 0.25rem;
 }
 
+/* Subsection Publication Buttons */
+.subsection-publications {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(226, 232, 240, 0.3);
+}
+
+.subsection-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
 /* Intro Content within Hero */
 .intro-content {
   margin-top: 3rem;
   padding-top: 3rem;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid rgba(226, 232, 240, 0.3);
 }
 
 .intro-content h2 {
   font-size: 1.875rem;
   font-weight: 700;
-  color: #1a202c;
+  color: #f7fafc;
   margin: 0 0 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #06b6d4;
@@ -297,7 +309,7 @@ body {
 .intro-content p {
   font-size: 1.125rem;
   line-height: 1.7;
-  color: #4a5568;
+  color: #e2e8f0;
   margin-bottom: 1.5rem;
 }
 
@@ -1142,6 +1154,7 @@ section h2 {
   font-size: 2rem;
   margin: 3rem 0 2rem;
   position: relative;
+  color: #f7fafc;
 }
 
 section h2::after {
