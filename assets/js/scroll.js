@@ -31,15 +31,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add smooth scroll behavior to navigation links
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
             const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
             
-            if (targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: 'smooth'
-                });
+            // Only prevent default for internal anchor links (starting with #)
+            if (targetId.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             }
+            // For external links (like CV), let the default behavior occur
         });
     });
 });
