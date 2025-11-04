@@ -20,13 +20,13 @@
         </div>
     </header>
 
-    <main class="container">
-        <section id="home" class="hero">
+  <main class="container">
+    <section id="home" class="hero">
             <div class="hero-left">
                 <img src="/assets/images/headshot_23_alt.JPG" alt="Profile photo" class="profile">
                 <div class="contact">
                     <div class="institution">CIERA/Northwestern</div>
-                    <a href="mailto:yuxin.dong@northwestern.edu">Email</a>
+          <a href="mailto:yuxin.dong@northwestern.edu">Email</a>
                     <a href="https://github.com/astro-vic" target="_blank">GitHub</a>
                 </div>
             </div>
@@ -44,16 +44,130 @@
 
         <section id="research">
             <h2>Research</h2>
-            <div class="research-interests">
-                <p class="loading">This section will contain your research interests and ongoing projects.</p>
-            </div>
+      <div class="projects-grid">
+        <!-- FRBs block -->
+        <article class="project-card research-card" id="block-frbs">
+          <h3>Fast Radio Bursts (FRBs)</h3>
+          <p>Probing the origins of FRBs with multi-wavelength observations (radio, optical, X-ray) and detailed studies of their local and host-galaxy environments.</p>
+          <div class="project-meta">Topics: burst energetics • local environments • host demographics • DM/rotation measures</div>
+          <div class="project-tags">
+            <span class="project-tag">FRBs</span>
+            <span class="project-tag">Multi-wavelength</span>
+            <span class="project-tag">Host galaxies</span>
+          </div>
+          <div class="project-details">
+            <h4>Selected results</h4>
+            <ul>
+              <li><a href="#pub-frb-1">First-author result (placeholder) on FRB host-galaxy properties</a></li>
+              <li><a href="#pub-frb-2">First-author result (placeholder) on local environment constraints</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Gamma-ray transients block -->
+        <article class="project-card research-card" id="block-grb">
+          <h3>Gamma-ray Transients</h3>
+          <p>Characterizing gamma-ray transients and their afterglows; linking prompt emission and environments to progenitor scenarios.</p>
+          <div class="project-meta">Topics: GRB afterglows • energetics • host environments • multi-band follow-up</div>
+          <div class="project-tags">
+            <span class="project-tag">GRBs</span>
+            <span class="project-tag">Afterglows</span>
+            <span class="project-tag">Environments</span>
+          </div>
+          <div class="project-details">
+            <h4>Selected results</h4>
+            <ul>
+              <li><a href="#pub-grb-1">First-author result (placeholder) on GRB environment analysis</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Transient host galaxies block -->
+        <article class="project-card research-card" id="block-hosts">
+          <h3>Transient Host Galaxies & Environments</h3>
+          <p>Using spatially-resolved spectroscopy and imaging to connect transient progenitors to their star-formation and metallicity environments.</p>
+          <div class="project-meta">Topics: IFU mapping • metallicity gradients • stellar populations</div>
+          <div class="project-tags">
+            <span class="project-tag">Hosts</span>
+            <span class="project-tag">IFU</span>
+            <span class="project-tag">Metallicity</span>
+          </div>
+          <div class="project-details">
+            <h4>Selected results</h4>
+            <ul>
+              <li><a href="#pub-host-1">First-author result (placeholder) on spatially-resolved host analysis</a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
         </section>
 
         <section id="publications">
             <h2>Publications</h2>
-            <div class="publication-list">
-                <p class="loading">Your publication list will appear here.</p>
-            </div>
+      <div class="publication-list">
+        <!-- TODO: Replace placeholders with your actual first-author papers (title, authors, venue, year, links). -->
+
+        <article class="publication-item" id="pub-frb-1">
+          <h3>FRB Host-Galaxy Properties and Local Environments (placeholder)</h3>
+          <div class="authors"><strong>Y. Dong</strong>, et al.</div>
+          <div class="venue">ApJ, 20XX</div>
+          <div class="publication-links">
+            <a class="btn ghost" href="#" target="_blank" rel="noopener">PDF</a>
+            <a class="btn ghost" href="#" target="_blank" rel="noopener">ADS</a>
+            <button class="btn ghost" onclick="toggleCitation('cite-frb-1')">BibTeX</button>
+          </div>
+          <pre id="cite-frb-1" class="citation-box">@article{DongFRBHost20XX,
+  author = {Dong, Yuxin and Others},
+  title = {FRB Host-Galaxy Properties and Local Environments},
+  journal = {ApJ},
+  year = {20XX},
+  doi = {TBD}
+}</pre>
+        </article>
+
+        <article class="publication-item" id="pub-frb-2">
+          <h3>Local Environment Constraints for Repeating FRBs (placeholder)</h3>
+          <div class="authors"><strong>Y. Dong</strong>, et al.</div>
+          <div class="venue">MNRAS, 20XX</div>
+          <div class="publication-links">
+            <a class="btn ghost" href="#" target="_blank" rel="noopener">PDF</a>
+            <a class="btn ghost" href="#" target="_blank" rel="noopener">ADS</a>
+            <button class="btn ghost" onclick="toggleCitation('cite-frb-2')">BibTeX</button>
+          </div>
+          <pre id="cite-frb-2" class="citation-box">@article{DongFRBLocal20XX,
+  author = {Dong, Yuxin and Others},
+  title = {Local Environment Constraints for Repeating FRBs},
+  journal = {MNRAS},
+  year = {20XX},
+  doi = {TBD}
+}</pre>
+        </article>
+
+        <article class="publication-item" id="pub-grb-1">
+          <h3>Gamma-ray Burst Environments and Afterglow Diagnostics (placeholder)</h3>
+          <div class="authors"><strong>Y. Dong</strong>, et al.</div>
+          <div class="venue">A&A, 20XX</div>
+          <div class="publication-links">
+            <a class="btn ghost" href="#" target="_blank" rel="noopener">PDF</a>
+            <a class="btn ghost" href="#" target="_blank" rel="noopener">ADS</a>
+            <button class="btn ghost" onclick="toggleCitation('cite-grb-1')">BibTeX</button>
+          </div>
+          <pre id="cite-grb-1" class="citation-box">@article{DongGRBEnv20XX,
+  author = {Dong, Yuxin and Others},
+  title = {Gamma-ray Burst Environments and Afterglow Diagnostics},
+  journal = {A\&A},
+  year = {20XX},
+  doi = {TBD}
+}</pre>
+        </article>
+      </div>
+      <script>
+        function toggleCitation(id) {
+          const el = document.getElementById(id);
+          if (!el) return;
+          el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+        }
+      </script>
         </section>
 
         <section id="contact">
@@ -62,7 +176,7 @@
                 <div class="contact-card">
                     <h3>Get in touch</h3>
                     <div class="contact-info">
-                        <p>Email: <a href="mailto:yuxin.dong@northwestern.edu">yuxin.dong@northwestern.edu</a></p>
+            <p>Email: <a href="mailto:yuxin.dong@northwestern.edu">yuxin.dong@northwestern.edu</a></p>
                         <p>Institution: CIERA / Northwestern University</p>
                         <p>GitHub: <a href="https://github.com/astro-vic" target="_blank">astro-vic</a></p>
                     </div>
