@@ -1346,8 +1346,8 @@ section h2::after {
 }
 
 .outreach-contact {
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(251, 191, 36, 0.1) 100%);
-  border: 1px solid rgba(6, 182, 212, 0.2);
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.3) 0%, rgba(251, 191, 36, 0.3) 100%);
+  border: 1px solid rgba(6, 182, 212, 0.4);
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
