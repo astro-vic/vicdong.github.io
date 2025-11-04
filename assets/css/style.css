@@ -426,13 +426,13 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.6);
   pointer-events: none;
   z-index: 0;
 }
 
 @media (prefers-color-scheme: dark) {
-  .hero::before { background: rgba(3,10,20,0.35); }
+  .hero::before { background: rgba(3,10,20,0.6); }
 }
 
 .timeline {
