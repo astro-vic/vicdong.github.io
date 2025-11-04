@@ -46,58 +46,74 @@
 
         <section id="research">
             <h2>Research</h2>
+            
+            <p class="research-intro">Throughout my research career so far, I have been lucky enough to work with many flavors of time-domain transients. Below are the ones I've had the opportunity to work on, but please don't hesitate to reach out for collaborations on other cool transients!</p>
+
+            <h3 class="research-section-title">Current</h3>
+            
       <div class="projects-grid">
         <!-- FRBs block -->
         <article class="project-card research-card" id="block-frbs">
           <h3>Fast Radio Bursts (FRBs)</h3>
-          <p>Probing the origins of FRBs with multi-wavelength observations (radio, optical, X-ray) and detailed studies of their local and host-galaxy environments.</p>
-          <div class="project-meta">Topics: burst energetics • local environments • host demographics • DM/rotation measures</div>
+          <p>Fast Radio Bursts (FRBs) are bright, millisecond radio transients with high dispersion measures (DM) that implies an extragalactic origin. A small fraction of FRBs are known to repeat, ruling out a cataclysmic origin for at least a subset of FRBs. FRBs are hard to study, especially when they are hard to localize and have no multi-wavelength counterparts.</p>
+          
+          <p>I joined the <a href="https://sites.google.com/ucolick.org/f-4/" target="_blank">Fast and Fortunate FRB Follow-up (F4)</a> collaboration in 2021 to study FRB sources on the observational side.</p>
+          
+          <p>I started a crossmatching project with <a href="https://ciera.northwestern.edu/directory/charlie-kilpatrick/" target="_blank">Dr. Charlie Kilpatrick</a> on FRBs. This project aims to build an infrastructure on rapidly associating current and future FRBs detections to any and all associated transients, narrowing down the list of potential host galaxies if it originates from one without having precise localization.</p>
+          
+          <div class="project-meta">Topics: burst localization • host galaxy association • transient crossmatching • multi-wavelength follow-up</div>
           <div class="project-tags">
             <span class="project-tag">FRBs</span>
-            <span class="project-tag">Multi-wavelength</span>
+            <span class="project-tag">F4 Collaboration</span>
+            <span class="project-tag">Host galaxies</span>
+            <span class="project-tag">Crossmatching</span>
+          </div>
+        </article>
+      </div>
+
+            <h3 class="research-section-title">Past</h3>
+            
+      <div class="projects-grid">
+        <!-- Ca-rich transients block -->
+        <article class="project-card research-card" id="block-ca-rich">
+          <h3>Ca-rich Transients (2018 – 2021)</h3>
+          <p>Calcium-rich (Ca-rich) transients are a newly recognized class of supernovae (SNe) with peculiar characteristics. They have a defining feature of strong calcium line emissions thirty days after explosion and may be a significant driver of chemical evolution in the intracluster medium (ISM). However, their progenitor systems remain unknown.</p>
+          
+          <p>I worked with Dr. Dan Milisavljevic to characterize the stellar populations of their host galaxies using broadband photometry. The analysis was done using <a href="https://github.com/bd-j/prospector" target="_blank">Prospector</a>, a Python package that specializes in stellar population inferences.</p>
+          
+          <div class="project-meta">Topics: stellar populations • host galaxy analysis • SED fitting • progenitor systems</div>
+          <div class="project-tags">
+            <span class="project-tag">Ca-rich SNe</span>
+            <span class="project-tag">Prospector</span>
+            <span class="project-tag">Host galaxies</span>
+            <span class="project-tag">Stellar populations</span>
+          </div>
+          <div class="project-details">
+            <h4>Selected results</h4>
+            <ul>
+              <li><a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...927..199D/abstract" target="_blank">First first-author publication</a> - found that at least some Ca-rich transients must not come from the core-collapse of massive young stars</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Short GRBs block -->
+        <article class="project-card research-card" id="block-sgrb">
+          <h3>Short Gamma-ray Bursts (2020 – 2021)</h3>
+          <p>Binary neutron star (BNS) mergers are systems that produce gravitational waves when two neutron stars merge somewhere in the local Universe. A way to understand the formation and evolution of these BNS mergers is through short-duration γ-ray bursts (sGRBs) as they have long been connected with one another.</p>
+          
+          <p>I worked with Dr. Wen-fai Fong and graduate student Anya Nugent as a research fellow and examined the host galaxies of a small sample of sGRBs by looking at the galaxy characteristics such as age, mass, and metallicity. I fit for the spectral energy distribution (SED) of the host galaxies using a parametric model that describes a delayed-tau star formation history.</p>
+          
+          <div class="project-meta">Topics: BNS mergers • host galaxy properties • SED fitting • stellar populations</div>
+          <div class="project-tags">
+            <span class="project-tag">sGRBs</span>
+            <span class="project-tag">BNS mergers</span>
+            <span class="project-tag">BRIGHT</span>
             <span class="project-tag">Host galaxies</span>
           </div>
           <div class="project-details">
             <h4>Selected results</h4>
             <ul>
-              <li><a href="#pub-frb-1">First-author result (placeholder) on FRB host-galaxy properties</a></li>
-              <li><a href="#pub-frb-2">First-author result (placeholder) on local environment constraints</a></li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Gamma-ray transients block -->
-        <article class="project-card research-card" id="block-grb">
-          <h3>Gamma-ray Transients</h3>
-          <p>Characterizing gamma-ray transients and their afterglows; linking prompt emission and environments to progenitor scenarios.</p>
-          <div class="project-meta">Topics: GRB afterglows • energetics • host environments • multi-band follow-up</div>
-          <div class="project-tags">
-            <span class="project-tag">GRBs</span>
-            <span class="project-tag">Afterglows</span>
-            <span class="project-tag">Environments</span>
-          </div>
-          <div class="project-details">
-            <h4>Selected results</h4>
-            <ul>
-              <li><a href="#pub-grb-1">First-author result (placeholder) on GRB environment analysis</a></li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Transient host galaxies block -->
-        <article class="project-card research-card" id="block-hosts">
-          <h3>Transient Host Galaxies & Environments</h3>
-          <p>Using spatially-resolved spectroscopy and imaging to connect transient progenitors to their star-formation and metallicity environments.</p>
-          <div class="project-meta">Topics: IFU mapping • metallicity gradients • stellar populations</div>
-          <div class="project-tags">
-            <span class="project-tag">Hosts</span>
-            <span class="project-tag">IFU</span>
-            <span class="project-tag">Metallicity</span>
-          </div>
-          <div class="project-details">
-            <h4>Selected results</h4>
-            <ul>
-              <li><a href="#pub-host-1">First-author result (placeholder) on spatially-resolved host analysis</a></li>
+              <li>All fits and final products were incorporated into the <a href="https://bright.ciera.northwestern.edu/" target="_blank">BRIGHT</a> (Broad-band Repository for Investigating Gamma-ray burst Host galaxies Traits) catalogue, now open to the public!</li>
             </ul>
           </div>
         </article>
