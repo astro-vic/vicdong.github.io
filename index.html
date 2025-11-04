@@ -239,62 +239,184 @@
                 Here are a few ways I try to make that happen.</p>
             </div>
 
-            <div class="outreach-slides">
+            <div class="outreach-presentations">
               
-              <!-- Slide 1: Astronomy on Tap -->
-              <div class="outreach-slide featured-slide">
-                <div class="slide-header">
-                  <div class="slide-icon">🍺</div>
-                  <div class="slide-number">01</div>
-                </div>
-                <div class="slide-content">
+              <!-- Astronomy on Tap Slide Deck -->
+              <div class="presentation-container">
+                <div class="presentation-header">
+                  <div class="presentation-icon">🍺</div>
                   <h3>Astronomy on Tap Chicago</h3>
-                  <p class="slide-tagline">Making astronomy accessible in casual, fun environments</p>
-                  
-                  <div class="slide-details">
-                    <div class="highlight-stat">
-                      <span class="stat-number">3+</span>
-                      <span class="stat-label">Speaking Events</span>
-                    </div>
-                    
-                    <div class="event-description">
-                      <p>Regular presenter at Astronomy on Tap Chicago, where I break down complex FRB research for diverse audiences in local bars and breweries. Topics include "Fast Radio Bursts: The Universe's Most Mysterious Signals" and "Hunting for Cosmic Explosions."</p>
-                    </div>
-                    
-                    <div class="event-highlights">
-                      <ul>
-                        <li>Presented "FRBs and Their Cosmic Neighborhoods" to 100+ attendees</li>
-                        <li>Interactive Q&A sessions bridging astronomy and everyday curiosity</li>
-                        <li>Collaboration with local science communicators and astronomers</li>
-                      </ul>
+                  <p class="presentation-tagline">Making astronomy accessible in casual, fun environments</p>
+                </div>
+                
+                <div class="slideshow-container" id="aot-slideshow">
+                  <!-- Slide 1: Overview -->
+                  <div class="outreach-slide active">
+                    <div class="slide-layout">
+                      <div class="slide-text">
+                        <h4>Event Overview</h4>
+                        <div class="highlight-stat">
+                          <span class="stat-number">3+</span>
+                          <span class="stat-label">Speaking Events</span>
+                        </div>
+                        <p>Regular presenter at Astronomy on Tap Chicago, where I break down complex FRB research for diverse audiences in local bars and breweries.</p>
+                        <ul class="slide-highlights">
+                          <li>100+ attendees per event</li>
+                          <li>Interactive Q&A sessions</li>
+                          <li>Collaborative science communication</li>
+                        </ul>
+                      </div>
+                      <div class="slide-image">
+                        <img src="/assets/images/aot-overview.jpg" alt="Astronomy on Tap venue" class="presentation-photo">
+                        <p class="photo-caption">Typical Astronomy on Tap Chicago venue atmosphere</p>
+                      </div>
                     </div>
                   </div>
                   
-                  <div class="slide-action">
-                    <a href="https://astronomyontap.org/locations/chicago/" target="_blank" class="event-link">Learn More About AoT Chicago</a>
+                  <!-- Slide 2: Presentation -->
+                  <div class="outreach-slide">
+                    <div class="slide-layout">
+                      <div class="slide-text">
+                        <h4>Presenting Research</h4>
+                        <p><strong>"FRBs and Their Cosmic Neighborhoods"</strong></p>
+                        <p>Breaking down the mystery of fast radio bursts and how we use their host galaxies to understand these cosmic explosions.</p>
+                        <ul class="slide-highlights">
+                          <li>Visual storytelling with clear analogies</li>
+                          <li>Audience-friendly explanations</li>
+                          <li>Real-time questions and discussion</li>
+                        </ul>
+                      </div>
+                      <div class="slide-image">
+                        <img src="/assets/images/aot-presenting.jpg" alt="Presenting at Astronomy on Tap" class="presentation-photo">
+                        <p class="photo-caption">Presenting "FRBs and Their Cosmic Neighborhoods"</p>
+                      </div>
+                    </div>
                   </div>
+                  
+                  <!-- Slide 3: Audience Engagement -->
+                  <div class="outreach-slide">
+                    <div class="slide-layout">
+                      <div class="slide-text">
+                        <h4>Audience Engagement</h4>
+                        <p>The best part of AoT is the incredible curiosity and thoughtful questions from diverse audiences - from astronomy enthusiasts to complete newcomers.</p>
+                        <ul class="slide-highlights">
+                          <li>Questions bridge everyday life and cosmic mysteries</li>
+                          <li>Building connections between research and public interest</li>
+                          <li>Inspiring the next generation of scientists</li>
+                        </ul>
+                      </div>
+                      <div class="slide-image">
+                        <img src="/assets/images/aot-audience.jpg" alt="Engaged audience at Astronomy on Tap" class="presentation-photo">
+                        <p class="photo-caption">Engaged audience during Q&A session</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Navigation buttons -->
+                  <button class="slide-nav prev" onclick="changeSlide('aot-slideshow', -1)">‹</button>
+                  <button class="slide-nav next" onclick="changeSlide('aot-slideshow', 1)">›</button>
+                  
+                  <!-- Slide indicators -->
+                  <div class="slide-dots">
+                    <span class="dot active" onclick="currentSlide('aot-slideshow', 1)"></span>
+                    <span class="dot" onclick="currentSlide('aot-slideshow', 2)"></span>
+                    <span class="dot" onclick="currentSlide('aot-slideshow', 3)"></span>
+                  </div>
+                </div>
+                
+                <div class="presentation-footer">
+                  <a href="https://astronomyontap.org/locations/chicago/" target="_blank" class="event-link">Learn More About AoT Chicago</a>
                 </div>
               </div>
 
-              <!-- Slide 2: Graduate Womxn in Physics -->
-              <div class="outreach-slide featured-slide">
-                <div class="slide-header">
-                  <div class="slide-icon">👩‍🔬</div>
-                  <div class="slide-number">02</div>
-                </div>
-                <div class="slide-content">
+              <!-- Graduate Womxn in Physics Slide Deck -->
+              <div class="presentation-container">
+                <div class="presentation-header">
+                  <div class="presentation-icon">👩‍🔬</div>
                   <h3>Graduate Womxn in Physics</h3>
-                  <p class="slide-tagline">Building community and representation in physics</p>
+                  <p class="presentation-tagline">Building community and representation in physics</p>
+                </div>
+                
+                <div class="slideshow-container" id="gwip-slideshow">
+                  <!-- Slide 1: Community Building -->
+                  <div class="outreach-slide active">
+                    <div class="slide-layout">
+                      <div class="slide-text">
+                        <h4>Community Building</h4>
+                        <div class="highlight-stat">
+                          <span class="stat-number">Active</span>
+                          <span class="stat-label">Community Member</span>
+                        </div>
+                        <p>Passionate advocate and active participant in Graduate Womxn in Physics initiatives at Northwestern, working to create inclusive spaces for underrepresented groups.</p>
+                        <ul class="slide-highlights">
+                          <li>Organize mentorship programs</li>
+                          <li>Facilitate discussion panels</li>
+                          <li>Host networking events</li>
+                        </ul>
+                      </div>
+                      <div class="slide-image">
+                        <img src="/assets/images/gwip-community.jpg" alt="GWIP community meeting" class="presentation-photo">
+                        <p class="photo-caption">Graduate Womxn in Physics community meeting</p>
+                      </div>
+                    </div>
+                  </div>
                   
-                  <div class="slide-details">
-                    <div class="highlight-stat">
-                      <span class="stat-number">Active</span>
-                      <span class="stat-label">Community Member</span>
+                  <!-- Slide 2: Mentorship Programs -->
+                  <div class="outreach-slide">
+                    <div class="slide-layout">
+                      <div class="slide-text">
+                        <h4>Mentorship & Support</h4>
+                        <p><strong>Connecting Graduate and Undergraduate Students</strong></p>
+                        <p>Facilitating meaningful mentor-mentee relationships that provide academic guidance, career advice, and emotional support for women and gender minorities in physics.</p>
+                        <ul class="slide-highlights">
+                          <li>One-on-one mentorship pairings</li>
+                          <li>Group mentorship sessions</li>
+                          <li>Professional development workshops</li>
+                        </ul>
+                      </div>
+                      <div class="slide-image">
+                        <img src="/assets/images/gwip-mentorship.jpg" alt="GWIP mentorship session" class="presentation-photo">
+                        <p class="photo-caption">Mentorship program kickoff event</p>
+                      </div>
                     </div>
-                    
-                    <div class="event-description">
-                      <p>Passionate advocate and active participant in Graduate Womxn in Physics initiatives at Northwestern. Working to create inclusive spaces and support networks for underrepresented groups in physics and astronomy.</p>
+                  </div>
+                  
+                  <!-- Slide 3: Advocacy & Events -->
+                  <div class="outreach-slide">
+                    <div class="slide-layout">
+                      <div class="slide-text">
+                        <h4>Advocacy & Events</h4>
+                        <p>Organizing events and initiatives that promote inclusive practices and support the success of women and gender minorities in academic physics environments.</p>
+                        <ul class="slide-highlights">
+                          <li>Panel discussions on navigating graduate school</li>
+                          <li>Professional networking mixers</li>
+                          <li>Advocacy for inclusive department policies</li>
+                          <li>Workshops on work-life balance and wellness</li>
+                        </ul>
+                      </div>
+                      <div class="slide-image">
+                        <img src="/assets/images/gwip-events.jpg" alt="GWIP networking event" class="presentation-photo">
+                        <p class="photo-caption">Networking and professional development event</p>
+                      </div>
                     </div>
+                  </div>
+                  
+                  <!-- Navigation buttons -->
+                  <button class="slide-nav prev" onclick="changeSlide('gwip-slideshow', -1)">‹</button>
+                  <button class="slide-nav next" onclick="changeSlide('gwip-slideshow', 1)">›</button>
+                  
+                  <!-- Slide indicators -->
+                  <div class="slide-dots">
+                    <span class="dot active" onclick="currentSlide('gwip-slideshow', 1)"></span>
+                    <span class="dot" onclick="currentSlide('gwip-slideshow', 2)"></span>
+                    <span class="dot" onclick="currentSlide('gwip-slideshow', 3)"></span>
+                  </div>
+                </div>
+                
+                <div class="presentation-footer">
+                  <a href="mailto:yuxin.dong@northwestern.edu" class="event-link">Connect About GWIP Initiatives</a>
+                </div>
+              </div>
                     
                     <div class="event-highlights">
                       <ul>

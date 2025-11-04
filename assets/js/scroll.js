@@ -48,3 +48,62 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Slideshow functionality for outreach presentations
+let slideIndices = {};
+
+function initializeSlideshow(slideshowId) {
+    slideIndices[slideshowId] = 1;
+    showSlide(slideshowId, slideIndices[slideshowId]);
+}
+
+function changeSlide(slideshowId, n) {
+    showSlide(slideshowId, slideIndices[slideshowId] += n);
+}
+
+function currentSlide(slideshowId, n) {
+    showSlide(slideshowId, slideIndices[slideshowId] = n);
+}
+
+function showSlide(slideshowId, n) {
+    const slideshow = document.getElementById(slideshowId);
+    if (!slideshow) return;
+    
+    const slides = slideshow.getElementsByClassName("outreach-slide");
+    const dots = slideshow.getElementsByClassName("dot");
+    
+    if (n > slides.length) { slideIndices[slideshowId] = 1; }
+    if (n < 1) { slideIndices[slideshowId] = slides.length; }
+    
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+    }
+    
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+    
+    if (slides[slideIndices[slideshowId] - 1]) {
+        slides[slideIndices[slideshowId] - 1].classList.add("active");
+    }
+    
+    if (dots[slideIndices[slideshowId] - 1]) {
+        dots[slideIndices[slideshowId] - 1].classList.add("active");
+    }
+}
+
+// Auto-initialize slideshows when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize all slideshows
+    const slideshows = document.querySelectorAll('.slideshow-container');
+    slideshows.forEach(slideshow => {
+        initializeSlideshow(slideshow.id);
+    });
+    
+    // Optional: Auto-advance slides every 8 seconds
+    setInterval(() => {
+        Object.keys(slideIndices).forEach(slideshowId => {
+            changeSlide(slideshowId, 1);
+        });
+    }, 8000);
+});
